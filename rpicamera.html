@@ -1,0 +1,39 @@
+<pre>
+<h1>
+raspistill
+</h1>
+From command line:
+$raspistill -vf -hf -o cam2.jpg
+
+
+
+DATE=$(date +"%Y-%m-%d_%H%M");
+raspistill -vf -hf -o /home/pi/camera/$DATE.png;
+
+
+https://www.raspberrypi.org/documentation/usage/camera/raspicam/README.md
+
+BASIC USAGE
+
+See guides for basic usage of each of the commands:
+
+raspistill
+	raspistill -o cam.jpg
+	raspistill -vf -hf -o cam2.jpg
+	#start of code
+		#!/bin/bash
+		DATE=$(date +"%Y-%m-%d_%H%M")
+		raspistill -vf -hf -o /home/pi/camera/$DATE.jpg
+		
+
+raspivid
+	raspivid -o vid h264
+	flip -hf and -vf
+	5 second video file	
+		to add time 
+	raspivid -o video.h264 -t 10000
+video
+
+
+raspiyuv
+</pre>
